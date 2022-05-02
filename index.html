@@ -7,12 +7,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="src/style.css">
   <link rel="stylesheet" href="src/variaveis.css">
+  <link rel="stylesheet" href="src/responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="src/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
 
@@ -24,11 +26,11 @@
       <h2>Fylo</h2>
     </div>
 
-    <nav>
+    <nav class="menu-topo">
       <ul>
-        <li><a href="">Features</a></li>
-        <li><a href="">Team</a></li>
-        <li><a href="">Sign in</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Sign in</a></li>
       </ul>
     </nav>
 
@@ -37,7 +39,8 @@
   <main>
     <section class="container-intro">
       <img class="intro" src="images/illustration-intro.png" alt="Imagem ilustrativa de pessoas organizando pastas">
-      <h2>All your files in one secure location,
+      <h2>
+        All your files in one secure location,
         accessible anywhere.
       </h2>
       <p>
@@ -88,7 +91,7 @@
 
     <section class="productive">
       <div class="container-productive">
-        <img src="images/illustration-stay-productive.png" alt="">
+        <img class="productive-img" src="images/illustration-stay-productive.png" alt="">
 
         <div class="container-productive-info">
 
@@ -112,9 +115,12 @@
       </div>
     </section>
 
-    <section class="quotes">
+    <section class="container quotes">
 
-      <div class="quotes-box">
+    <div class="quotes-box">
+
+      <img class="aspas" src="images/bg-quotes.png" alt="">
+
         <h2>Fylo has improved our team productivity by
           an order of magnitude. Since making the
           switch our team has become a well-olled
@@ -123,12 +129,14 @@
 
         <div class="perfil">
           <img src="images/profile-1.jpg" alt="">
-          <p>Satish Patel <br> Founder e CEO, Huddle</p>
+          <p class="nome">Satish Patel</p>
+          <p class="funcao">Founder e CEO, Huddle</p>
         </div>
 
       </div>
 
       <div class="quotes-box">
+
         <h2>Fylo has improved our team productivity by
           an order of magnitude. Since making the
           switch our team has become a well-olled
@@ -136,35 +144,128 @@
         </h2>
 
         <div class="perfil">
-          <img src="images/profile-1.jpg" alt="">
-          <p>Satish Patel <br> Founder e CEO, Huddle</p>
+          <img src="images/profile-2.jpg" alt="">
+          <p class="nome">Bruce McKenzie</p>
+          <p class="funcao">Founder e CEO, Huddle</p>
         </div>
 
       </div>
 
       <div class="quotes-box">
+
         <h2>Fylo has improved our team productivity by
           an order of magnitude. Since making the
           switch our team has become a well-olled
           collaboration machine.
         </h2>
+
         <div class="perfil">
-          <img src="images/profile-1.jpg" alt="">
-          <p>Satish Patel <br> Founder e CEO, Huddle</p>
+          <img src="images/profile-3.jpg" alt="">
+          <p class="nome">Iva Boyd</p>
+          <p class="funcao">Founder e CEO, Huddle</p>
         </div>
 
       </div>
 
-      </div>
-    </section> 
+    </section>
 
+    <section class="container-form">
+      <div class="form">
+        <h2>
+          Get early access today
+        </h2>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
+          our support team would be happy to help you.
+        </p>
+        <div class="input">
+          <input type="text" class="email" name="email" placeholder="email@example.com">
+          <input class="botao-iniciar-form" type="button" value="Get Started for free">
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer>
+      <div class="container-legenda">
+
+        <div class="legendas">
+
+          <div class="legenda localizacao">
+
+            <div class="logo-footer">
+              <img src="images/logo.svg" alt="">
+            </div>
+    
+
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea molestias reprehenderit numquam, fugit ut
+              asperiores esse ab omnis consequatur eveniet eos eius, maxime sequi hic aspernatur cumque beatae. Dolor,
+              nisi. Tempo
+            </p>
+
+          </div>
+
+          <div class="legenda contato">
+
+            <nobr>
+              <i class="fa-solid fa-phone"></i>
+              +55 71 XXXXX-XXXX
+            </nobr>
+
+            <nobr>
+              <i class="fa-solid fa-envelope"></i>
+              example@fylo.com
+            </nobr>
+
+          </div>
+
+          <div class="legenda about">
+
+            <nav>
+              <ul>
+                <li><a href="#">
+                    <nobr>About us</nobr>
+                  </a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </nav>
+
+          </div>
+
+          <div class="legenda contrato">
+
+            <nav>
+              <ul>
+                <li><a href="#">
+                    <nobr>Contact Us</nobr>
+                  </a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </nav>
+
+          </div>
+
+          <div class="legenda rede-social">
+
+            <i class="fa-brands fa-facebook-f"></i>
+
+            <i class="fa-brands fa-twitter"></i>
+
+            <i class="fa-brands fa-instagram"></i>
+
+          </div>
+
+        </div>
+      </div>
+    </footer>
 
   </main>
-
-
-  <footer>
-
-  </footer>
 </body>
 
 </html>

@@ -1,0 +1,56 @@
+@media(max-width: 1024px){
+
+    .container-intro img{
+        width: 30%;
+    }
+
+    .container.quotes{
+        display: flex;
+        justify-content: space-around;
+        gap: 60px;
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-top: 100px;
+        margin-bottom: 300px;
+        position: relative;
+    }
+
+    .quotes-box .perfil img{
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .productive .container-productive p{
+        font-size: 1rem;
+        width: 500px;
+    }
+
+    .productive .container-productive img{
+        width: 40%;
+    }
+}
+
+
+@media(max-width: 768px){
+
+    .container-productive{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productive-img img{
+        width: 40%;
+    }
+
+    .container-productive-info h2{
+        width: 100%;
+    }
+
+    .info{
+        width: 40%;
+      }
+
+    .container-productive-info{
+        text-align: center;
+    }
+}
