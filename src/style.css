@@ -19,14 +19,12 @@ body{
     font-family: 'Open Sans',sans-serif;
 }
 
-main{
-    position: relative;
-}
 
 header{
     font-family: 'Raleway';
     padding: 30px;
 }
+
 
 .cabecalho{
     display: flex;
@@ -60,14 +58,14 @@ nav ul li{
 }
 
 .container-intro h2{
-    width: 50%;
+    width: 70%;
     text-align: center;
     color: white;
     padding: 10px 0px;
 }
 
 .container-intro p{
-    width: 50%;
+    width: 100%;
     text-align: center;
     color: white;
     padding-top: 20px;
@@ -76,24 +74,17 @@ nav ul li{
 .botao-iniciar{
     border: none;
     margin: 30px;
-    padding: 15px 50px;
+    padding: 15px 60px;
     border-radius: 25px;
     font-weight: 700;
     color: white;
     background-color: #4BB7CD;
 }
 
-.container{
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .features{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .features-box{
@@ -107,7 +98,7 @@ nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 40px 5px;
 }
 
 .features img{
@@ -116,7 +107,7 @@ nav ul li{
 
 .features h3,
 p{
-    width: 600px;
+    width: 500px;
     color: white;
     text-align: center;
 }
@@ -145,7 +136,7 @@ p{
 }
 
 .container-productive-info p{
-    width: 600px;
+    width: 90%;
     font-size: 1.2rem;
 }
 
@@ -176,78 +167,84 @@ p{
 }
 
 .productive-img{
-    width: 350px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
 }
 
-.container.quotes{
+.container-quotes{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 300px;
+    flex-wrap: wrap;
+    margin-bottom: 350px;
 }
 
+.quotes-box{
+    width: 30%;
+    height: 250px;
+    background-color: #21293C;
+    position: relative;
+}
 
 .quotes-box.satish{
+    width: 30%;
+    height: 250px;
+    background-color: #21293C;
     position: relative;
 }
 
 .aspas{
     position: absolute;
+    border-radius: 0;
     top: -35px;
-    left: -10px;
+    left: -15px;
     z-index: -1;
 }
 
-
-.quotes-box{
-    position: relative;
-    width: 350px;
-    height: 200px;
-    background-color: #21293C;
+.quotes-box h2{
+    font-size: 1.2rem;
+    padding: 20px;
+    color: white;
+    font-weight: 400;
 }
 
-.quotes-box .perfil img{
+.quotes-box .profile-pic{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     margin-left: 20px;
-    margin-top: 25px;
+    border-radius: 50%;
 }
 
-
-.quotes-box h2{
-    color: white;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 15px;
+.quotes-box .perfil{
+    position: relative;
 }
 
-.quotes-box .perfil .nome{
-    font-size: 0.8rem;
-    font-weight: 700;
-    width: 200px;
+.quotes-box .nome-funcao{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: 40px;
     left: 70px;
+    bottom: 5px;
+}
+
+.quotes-box .nome{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
     text-align: left;
 }
 
-.quotes-box .perfil .funcao{
+.quotes-box .funcao{
+    width: 100%;
     font-size: 0.8rem;
     font-weight: 400;
-    width: 200px;
-    position: absolute;
-    bottom: 25px;
-    left: 70px;
     text-align: left;
 }
 
 .container-form{
     position: absolute;
-    width: 70%;
+    width: 80%;
     height: 300px;
-    bottom: 300px;
+    bottom: 80%;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
@@ -274,17 +271,21 @@ p{
 .form p{
     width: 100%;
     padding: 0px 40px;
+    font-size: 1rem;
+}
+
+.form .input{
+    margin-top: 20px;
 }
 
 .form .email{
     padding: 15px 150px;
-    margin-right: 30px;
+    margin-right: 20px;
     border-radius: 25px;
 }
 
-.botao-iniciar-form{
+.btn-form{
     border: none;
-    margin: 30px;
     padding: 15px 50px;
     border-radius: 25px;
     font-weight: 700;
@@ -303,25 +304,27 @@ footer{
     background-color: #0C1524;
     height: 100%;
     width: 100%;
+    position: relative;
 }
-
 
 .legendas{
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
 .logo-footer{
     position: absolute;
+    width: 100%;
     top: -60px;
     left: 0;
 }
 
 .legenda{
     margin-top: 200px;
+    padding: 0;
 }
 
 .legenda.localizacao{
@@ -348,6 +351,7 @@ footer{
 .legenda.about,
 .legenda.contrato{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -361,6 +365,7 @@ footer{
 
 .legenda.rede-social{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     color: white;
 }
