@@ -179,6 +179,26 @@
 }
 
 @media (max-width: 635px) {
+
+  .logo-footer{
+    padding-left: 100px;
+  }
+
+  .legenda.localizacao p{
+    width: 70%;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 60px;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  .container-productive p{
+    font-size: 0.8rem;
+  }
+
   .box h3 {
     font-size: 1rem;
   }
